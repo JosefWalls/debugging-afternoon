@@ -29,11 +29,12 @@ class App extends Component {
     });
   }
   removeFromCart = (index) => {
-    let cartCopy = this.state.cart.slice();
+    let cartCopy = this.state.cart.slice(); ////////////////////////////////////THIS MAY BE THE ISSUE
     cartCopy.splice(index, 1);
     this.setState({
       cart: cartCopy
     });
+    alert("Item sadly removed. But we still gon charge you.")
   }
   
   navigate = (location) => {

@@ -10,7 +10,6 @@ class StoreFront extends Component {
         <img src={element.image} alt="" />
         <h2>{element.desc}</h2>
         <h3>{"$" + element.price + ".00"}</h3>
-        <h6>{"Tax is $" + (element.tax = element.price * .425) }</h6>
         <button onClick={() => this.props.addToCart(element)}>Purchase!</button>
       </div>);
     });
