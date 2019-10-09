@@ -49,3 +49,14 @@ img {
   align-items: center;
   height: calc(100vh - 102px);
 }
+
+.totals {
+  background: whitesmoke;
+  border: 1px solid grey;
+  height: 50vh;
+  width: 50vw;
+  padding-left: 5%;
+  font-size: 30px;
+  line-height: 15vh
+}
+

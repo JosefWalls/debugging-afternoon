@@ -13,8 +13,8 @@ class NavBar extends Component {
 
           <div className="navbar-links-container">
             <ul className="navbar-links">
-              <li onClick={() => this.props.navigate('store')}>Store</li>
-              <li onClick={() => this.props.navigate('cart')}>Shopping Cart</li>
+              <li onClick={() => this.props.navigate('this.state.products')}>Store</li>
+              <li onClick={() => this.props.navigate("this.state.cart")}>Shopping Cart</li>
             </ul>
           </div>
         </div>

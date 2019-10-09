@@ -12,6 +12,7 @@ class App extends Component {
       cart: [],
       showCart: false
     };
+
   }
   componentDidMount() {
     axios
@@ -22,25 +23,27 @@ class App extends Component {
         });
       });
   }
-  addToCart(item) {
+  addToCart = (item) => {
     this.setState({
       cart: [...this.state.cart, item]
     });
   }
-  removeFromCart(index) {
+  removeFromCart = (index) => {
     let cartCopy = this.state.cart.slice();
     cartCopy.splice(index, 1);
     this.setState({
       cart: cartCopy
     });
   }
-  navigate(location) {
-    if (location === "cart") {
-      this.state.showCart = true;
+  
+  navigate = (location) => {
+    if (location === "this.state.cart") {
+      this.setState({showCart: true})
     } else {
-      this.state.showCart = false;
+      this.setState({showCart: false})
     }
   }
+
   render() {
     const { products, cart, showCart } = this.state;
     return (
